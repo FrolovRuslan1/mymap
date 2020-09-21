@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editButton {
+    font-size: 20px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #9bcdff;
+    padding: 10px;
+    border-radius: 6%;
+}
+
+.placeForEdit {
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*display: none;*/
+    margin-bottom: 100px;
+    background-color: #1a1ac4;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    height: 500px;
+    width: 500px;
+}

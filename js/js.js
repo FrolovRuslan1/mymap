@@ -181,8 +181,6 @@
                         }
                         placeForEdit__footer__element__coords__value__latitude.setAttribute('disabled', '');
                         placeForEdit__footer__element__coords__value__longitude.setAttribute('disabled', '');
-                        // placeForEdit__footer__element__coords__value__latitude.value = e.target._latlng.lat;
-                        // placeForEdit__footer__element__coords__value__longitude.value = e.target._latlng.lng;
                     }).
                     // render latlng in input
                     on('drag', function (e) {

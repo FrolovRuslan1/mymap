@@ -30,7 +30,6 @@
 
 
 
-    console.log('markers: before render',markers);
     // render past markers
     if (markers === null) {
         markers = [];
@@ -38,7 +37,7 @@
         markers = JSON.parse(markers);
 
         for (let i = 0; i < markers.length; i++){
-            let marker = L.marker([markers[i].lat, markers[i].lng], {
+            L.marker([markers[i].lat, markers[i].lng], {
                 draggable: true
             }).addTo(map).
                 // map to opacity and view edit info
@@ -57,10 +56,8 @@
                 }).
                 // render latlng in input
                 on('drag', function (e) {
-                    console.log('dragstart', e)
                     if (placeForEdit__header__tools_Marker_state1.classList.contains('placeForEdit__header__tools_state2') && mapId.style.opacity === '0.2') {
-                        e.target.dragging.enable()
-                        console.log(e.target)
+                        e.target.dragging.enable();
                         if (placeForEdit__footer.style.display === 'flex'){
                             placeForEdit__footer__element__coords__value__latitude.value = e.latlng.lat;
                             placeForEdit__footer__element__coords__value__longitude.value = e.latlng.lng;
@@ -73,7 +70,6 @@
         }
 
     }
-    console.log('markers: after render',markers);
 
 
 
@@ -142,13 +138,11 @@
                         nameMarker = placeForEdit__footer__element__name__value.value;
                         marker.bindPopup('<div style="display: flex; justify-content: center; align-items: center; flex-direction: column"><div></div>' + nameMarker + '<div>' + descriptionMarker + '</div></div>');
                         marker.update();
-                        console.log('nameMarker', nameMarker);
                     });
                     placeForEdit__footer__element__description__value.addEventListener('input', function () {
                         descriptionMarker = placeForEdit__footer__element__description__value.value;
                         marker.bindPopup('<div style="display: flex; justify-content: center; align-items: center; flex-direction: column"><div></div>' + nameMarker + '<div>' + descriptionMarker + '</div></div>');
                         marker.update();
-                        console.log('descriptionMarker', descriptionMarker);
                     });
 
 
@@ -170,8 +164,7 @@
                     // set coords
                     on('click', function (e) {
                         if (placeForEdit__header__tools_Marker_state1.classList.contains('placeForEdit__header__tools_state2') && mapId.style.opacity === '0.2') {
-                            e.target.dragging.enable()
-                            console.log(e.target)
+                            e.target.dragging.enable();
                             if (placeForEdit__footer.style.display === 'flex'){
                                 placeForEdit__footer__element__coords__value__latitude.value = e.latlng.lat;
                                 placeForEdit__footer__element__coords__value__longitude.value = e.latlng.lng;
@@ -185,8 +178,7 @@
                     // render latlng in input
                     on('drag', function (e) {
                         if (placeForEdit__header__tools_Marker_state1.classList.contains('placeForEdit__header__tools_state2') && mapId.style.opacity === '0.2') {
-                            e.target.dragging.enable()
-                            console.log(e.target)
+                            e.target.dragging.enable();
                             if (placeForEdit__footer.style.display === 'flex'){
                                 placeForEdit__footer__element__coords__value__latitude.value = e.latlng.lat;
                                 placeForEdit__footer__element__coords__value__longitude.value = e.latlng.lng;
@@ -194,7 +186,7 @@
                         }else {
                             e.target.dragging.disable();
                         }
-                    })
+                    });
 
 
 
@@ -211,7 +203,6 @@
                         });
                         let json = JSON.stringify(markers);
                         localStorage.setItem('markers', json);
-                        console.log('localStorage ', localStorage);
                         mapId.style.opacity = '1';
                         placeForEdit__footer.style.display = 'none';
                         nameMarker = null;

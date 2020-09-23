@@ -24,12 +24,34 @@
 
 
 
-    <div class="editButton">
-        EditMap
-    </div>
-    <div class="placeForEdit" style="display: flex">
-        <div class="placeForEdit__header"></div>
+    <div class="editButton" style="display: block">GoEditMap!!!</div>
+    <div class="placeForEdit">
+        <div class="placeForEdit__header">
+            <div class="placeForEdit__header__tools" style="display: none">
+                <div class="placeForEdit__header__tools_Marker_state1 placeForEdit__header__tools_common">Markers</div>
+            </div>
+        </div>
         <div id="map"></div>
+        <div class="placeForEdit__footer" style="display: none">
+            <div class="placeForEdit__footer__element">
+                <div class="placeForEdit__footer__element__name">
+                    <div class="placeForEdit__footer__element__name__key">Name: </div>
+                    <input type="text" class="placeForEdit__footer__element__name__value" placeholder="Name" value="">
+                </div>
+                <div class="placeForEdit__footer__element__description">
+                    <div class="placeForEdit__footer__element__description__key">Description: </div>
+                    <textarea class="placeForEdit__footer__element__description__value" placeholder="Description..." value=""></textarea>
+                </div>
+                <div class="placeForEdit__footer__element__coords">
+                    <div class="placeForEdit__footer__element__coords__key">Coords: </div>
+                    <div class="placeForEdit__footer__element__coords__value">
+                        <input type="text" class="placeForEdit__footer__element__coords__value__latitude" placeholder="latitude" value="">
+                        <input type="text" class="placeForEdit__footer__element__coords__value__longitude" placeholder="longitude" value="">
+                    </div>
+                </div>
+                <button class="placeForEdit__footer__element__button">OK</button>
+            </div>
+        </div>
     </div>
 
 

@@ -1,0 +1,26 @@
+@import "../flex";
+
+
+
+@mixin flexRow {
+  @include flex;
+  flex: {
+    direction: row;
+  }
+}
+
+@mixin flexRowCenter {
+  @include flexRow;
+  justify-content: center;
+
+}
+
+@mixin flexRowSpaceBetween {
+  @include flexRow;
+  justify-content: space-between;
+}
+
+@mixin flexRowSpaceAround {
+  @include flexRow;
+  justify-content: space-around;
+}

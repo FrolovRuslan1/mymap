@@ -1,0 +1,18 @@
+@import "states/varibles";
+@import "states/flex/_index";
+
+
+
+
+* {
+  outline: 1px solid #5863e7;
+}
+
+.mapEditor {
+  height: $height100;
+  width: $width100;
+  margin: auto;
+  @include flexColumnCenter;
+}
+
+@import "elems/mapEditor__headerEditor/mapEditor__headerEditor";

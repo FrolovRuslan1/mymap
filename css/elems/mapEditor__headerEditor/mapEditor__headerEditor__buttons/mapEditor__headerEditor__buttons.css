@@ -1,0 +1,14 @@
+.mapEditor__headerEditor__buttons {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.mapEditor__headerEditor__buttons .mapEditor__headerEditor__buttons__button {
+  background-color: #5863e7;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+/*# sourceMappingURL=mapeditor__headereditor__buttons.css.map */

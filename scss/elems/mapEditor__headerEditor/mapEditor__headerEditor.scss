@@ -1,0 +1,10 @@
+@import "../../states/flex/_index";
+
+
+.mapEditor__headerEditor {
+  width: 1000px;
+  @include flexColumnCenter;
+  @import "mapEditor__headerEditor__mode/mapEditor__headerEditor__mode";
+  @import "mapEditor__headerEditor__buttons/mapEditor__headerEditor__buttons";
+}
+

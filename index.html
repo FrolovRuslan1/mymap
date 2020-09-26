@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>myMaps</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="leaflet/leaflet.css" />
     <script type="text/javascript" src="leaflet/leaflet.js"></script>
 </head>
@@ -18,14 +18,17 @@
             Watch
         </div>
         <div class="mapEditor__headerEditor__buttons">
-            <div class="mapEditor__headerEditor__buttons__button"></div>
-            <div class="mapEditor__headerEditor__buttons__button"></div>
-            <div class="mapEditor__headerEditor__buttons__button"></div>
-            <div class="mapEditor__headerEditor__buttons__button"></div>
-            <div class="mapEditor__headerEditor__buttons__button"></div>
+            <div class="mapEditor__headerEditor__buttons__button mapEditor__headerEditor__buttons__marker">Marks</div>
         </div>
     </div>
-
+    <div id="map"></div>
+    <div class="mapEditor__marker">
+        <input type="text" class="mapEditor__marker__name" placeholder="name">
+        <input type="text" class="mapEditor__marker__description" placeholder="description">
+        <input type="text" class="mapEditor__marker__latitude" placeholder="latitude">
+        <input type="text" class="mapEditor__marker__longitude" placeholder="longitude">
+        <div class="mapEditor__marker__button"></div>
+    </div>
 </div>
 
 
@@ -36,7 +39,7 @@
 
 
 
-    <script src="js/js.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
 

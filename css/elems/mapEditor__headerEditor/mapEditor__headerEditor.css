@@ -1,0 +1,25 @@
+.mapEditor__headerEditor {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.mapEditor__headerEditor .mapEditor__headerEditor__mode {
+  font-size: 30px;
+  text-align: center;
+}
+.mapEditor__headerEditor .mapEditor__headerEditor__buttons {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.mapEditor__headerEditor .mapEditor__headerEditor__buttons .mapEditor__headerEditor__buttons__button {
+  background-color: #5863e7;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+/*# sourceMappingURL=mapeditor__headereditor.css.map */

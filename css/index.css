@@ -66,7 +66,7 @@ html body {
 }
 
 .mapEditor__headerEditor__buttons__shadow {
-  box-shadow: 2px 3px 7px #888888;
+  box-shadow: 2px 1px 2px 2px black;
 }
 
 /*# sourceMappingURL=index.css.map */

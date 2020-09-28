@@ -1,11 +1,8 @@
-let markerButton =  document.getElementsByClassName('mapEditor__headerEditor__buttons__marker')[0];
+import map from "../../map/map";
+let buttonMarker = document.getElementsByClassName('mapEditor__headerEditor__buttons__marker')[0];
 
-markerButton.addEventListener('click', function () {
-    markerButtonShadow = markerButton.classList.contains('mapEditor__headerEditor__buttons__shadow');
-    console.log()
-    if (markerButtonShadow){
-
+map.addEventListener('click', function (event) {
+    if (buttonMarker.classList.contains('mapEditor__headerEditor__buttons__shadow')) {
+        L.marker(event.latlng).addTo(map)
     }
-
-
 })

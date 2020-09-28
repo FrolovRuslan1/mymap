@@ -1,3 +1,6 @@
-#map {
+@import "../../states/_varibles";
 
+#map {
+  width: $width100;
+  height: $height100;
 }

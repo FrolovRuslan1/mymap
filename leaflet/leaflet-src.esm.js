@@ -11,8 +11,8 @@ var version = "1.6.0";
  * Various utility functions, used by Leaflet internally.
  */
 
-// @function extend(dest: Object, src?: Object): Object
-// Merges the properties of the `src` object (or multiple objects) into `dest` object and returns the latter. Has an `L.extend` shortcut.
+// @function extend(dest: Object, js?: Object): Object
+// Merges the properties of the `js` object (or multiple objects) into `dest` object and returns the latter. Has an `L.extend` shortcut.
 function extend(dest) {
 	var i, j, len, src;
 
@@ -198,7 +198,7 @@ function indexOf(array, el) {
 // @property emptyImageUrl: String
 // Data URI string containing a base64-encoded empty GIF image.
 // Used as a hack to free memory from unused images on WebKit-powered
-// mobile devices (by setting image `src` to this string).
+// mobile devices (by setting image `js` to this string).
 var emptyImageUrl = 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';
 
 // inspired by http://paulirish.com/2011/requestanimationframe-for-smart-animating/
@@ -398,7 +398,7 @@ function checkDeprecatedMixinEvents(includes) {
  * @aka L.Evented
  * @inherits Class
  *
- * A set of methods shared between event-powered classes (like `Map` and `Marker`). Generally, events allow you to execute some function when something happens with an object (e.g. the user clicks on the map, causing the map to fire `'click'` event).
+ * A set of methods shared between event-powered classes (like `Map` and `marker`). Generally, events allow you to execute some function when something happens with an object (e.g. the user clicks on the map, causing the map to fire `'click'` event).
  *
  * @example
  *
@@ -4114,13 +4114,13 @@ var Map = Evented.extend({
 		// Pane for `GridLayer`s and `TileLayer`s
 		this.createPane('tilePane');
 		// @pane overlayPane: HTMLElement = 400
-		// Pane for overlay shadows (e.g. `Marker` shadows)
+		// Pane for overlay shadows (e.g. `marker` shadows)
 		this.createPane('shadowPane');
 		// @pane shadowPane: HTMLElement = 500
 		// Pane for vectors (`Path`s, like `Polyline`s and `Polygon`s), `ImageOverlay`s and `VideoOverlay`s
 		this.createPane('overlayPane');
 		// @pane markerPane: HTMLElement = 600
-		// Pane for `Icon`s of `Marker`s
+		// Pane for `Icon`s of `marker`s
 		this.createPane('markerPane');
 		// @pane tooltipPane: HTMLElement = 650
 		// Pane for `Tooltip`s.
@@ -4870,7 +4870,7 @@ Map.include({
  * };
  *
  * var overlays = {
- * 	"Marker": marker,
+ * 	"marker": marker,
  * 	"Roads": roadsLayer
  * };
  *
@@ -4889,7 +4889,7 @@ Map.include({
  * The layer names can contain HTML, which allows you to add additional styling to the items:
  *
  * ```js
- * {"<img src='my-layer-icon' /> <span class='my-layer-item'>My Layer</span>": myLayer}
+ * {"<img js='my-layer-icon' /> <span class='my-layer-item'>My Layer</span>": myLayer}
  * ```
  */
 
@@ -5680,7 +5680,7 @@ control.attribution = attribution;
 
 /*
 	L.Handler is a base class for handler classes that are used internally to inject
-	interaction features like dragging to classes like Map and Marker.
+	interaction features like dragging to classes like Map and marker.
 */
 
 // @class Handler
@@ -7134,7 +7134,7 @@ function icon(options) {
  * @aka L.Icon.Default
  * @section
  *
- * A trivial subclass of `Icon`, represents the icon to use in `Marker`s when
+ * A trivial subclass of `Icon`, represents the icon to use in `marker`s when
  * no icon is specified. Points to the blue marker image distributed with Leaflet
  * releases.
  *
@@ -7142,7 +7142,7 @@ function icon(options) {
  * (which is a set of `Icon options`).
  *
  * If you want to _completely_ replace the default icon, override the
- * `L.Marker.prototype.options.icon` with your own icon instead.
+ * `L.marker.prototype.options.icon` with your own icon instead.
  */
 
 var IconDefault = Icon.extend({
@@ -7188,11 +7188,11 @@ var IconDefault = Icon.extend({
 });
 
 /*
- * L.Handler.MarkerDrag is used internally by L.Marker to make the markers draggable.
+ * L.Handler.MarkerDrag is used internally by L.marker to make the markers draggable.
  */
 
 
-/* @namespace Marker
+/* @namespace marker
  * @section Interaction handlers
  *
  * Interaction handlers are properties of a marker instance that allow you to control interaction behavior in runtime, enabling or disabling certain features such as dragging (see `Handler` methods). Example:
@@ -7202,7 +7202,7 @@ var IconDefault = Icon.extend({
  * ```
  *
  * @property dragging: Handler
- * Marker dragging handler (by both mouse and touch). Only valid when the marker is on the map (Otherwise set [`marker.options.draggable`](#marker-draggable)).
+ * marker dragging handler (by both mouse and touch). Only valid when the marker is on the map (Otherwise set [`marker.options.draggable`](#marker-draggable)).
  */
 
 var MarkerDrag = Handler.extend({
@@ -7343,10 +7343,10 @@ var MarkerDrag = Handler.extend({
 });
 
 /*
- * @class Marker
+ * @class marker
  * @inherits Interactive layer
- * @aka L.Marker
- * L.Marker is used to display clickable/draggable icons on the map. Extends `Layer`.
+ * @aka L.marker
+ * L.marker is used to display clickable/draggable icons on the map. Extends `Layer`.
  *
  * @example
  *
@@ -7358,7 +7358,7 @@ var MarkerDrag = Handler.extend({
 var Marker = Layer.extend({
 
 	// @section
-	// @aka Marker options
+	// @aka marker options
 	options: {
 		// @option icon: Icon = *
 		// Icon instance to use for rendering the marker.
@@ -7714,10 +7714,10 @@ var Marker = Layer.extend({
 });
 
 
-// factory L.marker(latlng: LatLng, options? : Marker options)
+// factory L.marker(latlng: LatLng, options? : marker options)
 
-// @factory L.marker(latlng: LatLng, options? : Marker options)
-// Instantiates a Marker object given a geographical point and optionally an options object.
+// @factory L.marker(latlng: LatLng, options? : marker options)
+// Instantiates a marker object given a geographical point and optionally an options object.
 function marker(latlng, options) {
 	return new Marker(latlng, options);
 }
@@ -8610,7 +8610,7 @@ var GeoJSON = FeatureGroup.extend({
 	 * @option pointToLayer: Function = *
 	 * A `Function` defining how GeoJSON points spawn Leaflet layers. It is internally
 	 * called when data is added, passing the GeoJSON point feature and its `LatLng`.
-	 * The default is to spawn a default `Marker`:
+	 * The default is to spawn a default `marker`:
 	 * ```js
 	 * function(geoJsonPoint, latlng) {
 	 * 	return L.marker(latlng);
@@ -8881,7 +8881,7 @@ var PointToGeoJSON = {
 	}
 };
 
-// @namespace Marker
+// @namespace marker
 // @section Other methods
 // @method toGeoJSON(precision?: Number): Object
 // `precision` is the number of decimal places for coordinates.
@@ -10166,7 +10166,7 @@ Layer.include({
  * - the `offset` Tooltip option: it defaults to [0, 0], and it's specific to one tooltip.
  *   Add a positive x offset to move the tooltip to the right, and a positive y offset to
  *   move it to the bottom. Negatives will move to the left and top.
- * - the `tooltipAnchor` Icon option: this will only be considered for Marker. You
+ * - the `tooltipAnchor` Icon option: this will only be considered for marker. You
  *   should adapt this value if you use a custom icon.
  */
 
@@ -13965,4 +13965,4 @@ Map.Tap = Tap;
 Map.TouchZoom = TouchZoom;
 
 export { version, Control, control, Browser, Evented, Mixin, Util, Class, Handler, extend, bind, stamp, setOptions, DomEvent, DomUtil, PosAnimation, Draggable, LineUtil, PolyUtil, Point, toPoint as point, Bounds, toBounds as bounds, Transformation, toTransformation as transformation, index as Projection, LatLng, toLatLng as latLng, LatLngBounds, toLatLngBounds as latLngBounds, CRS, GeoJSON, geoJSON, geoJson, Layer, LayerGroup, layerGroup, FeatureGroup, featureGroup, ImageOverlay, imageOverlay, VideoOverlay, videoOverlay, SVGOverlay, svgOverlay, DivOverlay, Popup, popup, Tooltip, tooltip, Icon, icon, DivIcon, divIcon, Marker, marker, TileLayer, tileLayer, GridLayer, gridLayer, SVG, svg$1 as svg, Renderer, Canvas, canvas$1 as canvas, Path, CircleMarker, circleMarker, Circle, circle, Polyline, polyline, Polygon, polygon, Rectangle, rectangle, Map, createMap as map };
-//# sourceMappingURL=leaflet-src.esm.js.map
+//# sourceMappingURL=leaflet-js.esm.js.map

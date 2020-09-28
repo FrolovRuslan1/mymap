@@ -6,13 +6,28 @@
 
 * {
   outline: 1px solid #5863e7;
+  padding: 0;
+  border: 0;
+  margin: 0;
 }
 
-.mapEditor {
+html {
   height: $height100;
-  width: $width100;
-  margin: auto;
-  @include flexColumnCenter;
+  body {
+    height: $height100;
+  }
 }
+
+
+
+
+@import "elems/mapEditor/mapEditor";
 
 @import "elems/mapEditor__headerEditor/mapEditor__headerEditor";
+
+@import "elems/map/map";
+
+.mapEditor__headerEditor__buttons__shadow {
+  @import "states/shadow/shadowButton";
+  @include shadowButton(2px 3px 7px #888888);
+}

@@ -4,6 +4,8 @@
   "description": "Aplication where you create maps",
   "main": "index.js",
   "scripts": {
+    "build": "npx webpack --watch --config webpack.config.js",
+    "scss": "sass --watch scss:css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/FrolovRuslan1/myMaps/issues"
   },
-  "homepage": "https://github.com/FrolovRuslan1/myMaps#readme"
+  "homepage": "https://github.com/FrolovRuslan1/myMaps#readme",
+  "devDependencies": {
+    "js-loader": "^0.1.1"
+  }
 }

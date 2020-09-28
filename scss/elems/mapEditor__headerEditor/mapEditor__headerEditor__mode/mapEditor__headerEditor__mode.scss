@@ -1,6 +1,21 @@
+@import "../../../states/pointer/_pointer";
+@import "../../../states/shadow/_shadowButton";
+
+
 .mapEditor__headerEditor__mode {
   font: {
     size: 30px;
   }
   text-align: center;
+  background-color: #9dbeff;
+  border-radius: 25px;
+  padding: 5px 50px;
+  margin: {
+    top: 30px;
+    bottom: 30px;
+  }
+  @include pointer;
+  &:active{
+    @include shadowButton(2px 3px 7px #888888);
+  }
 }

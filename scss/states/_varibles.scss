@@ -1,2 +1,6 @@
 $height100: 100%;
 $width100: 100%;
+
+@mixin userNoSelect{
+  user-select: none;
+}

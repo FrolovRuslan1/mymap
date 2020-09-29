@@ -1,4 +1,6 @@
-let buttons =  document.getElementsByClassName('mapEditor__headerEditor__buttons ')[0].children;
+import {mapElement, editorMarker, buttons} from "../states/varible/varebles";
+
+
 
 for (let button of buttons) {
     button.addEventListener('click', function () {
@@ -8,10 +10,13 @@ for (let button of buttons) {
         if (buttonShadow) {
 
             button.classList.remove('mapEditor__headerEditor__buttons__shadow');
+            mapElement.style.cursor = 'grab';
+            editorMarker.style.display = 'none';
 
         } else {
 
             button.classList.add('mapEditor__headerEditor__buttons__shadow');
+            mapElement.style.cursor = 'pointer';
 
             for (let btn of buttons) {
 

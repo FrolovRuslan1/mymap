@@ -1,4 +1,4 @@
-@import "states/varibles";
+@import "states/_varibles";
 @import "states/flex/_index";
 
 
@@ -25,9 +25,15 @@ html {
 
 @import "elems/mapEditor__headerEditor/mapEditor__headerEditor";
 
+@import "elems/mapEditor__marker/mapEditor__marker";
+
 @import "elems/map/map";
 
 .mapEditor__headerEditor__buttons__shadow {
   @import "states/shadow/shadowButton";
   @include shadowButton(2px 1px 2px 2px black);
+}
+
+.popUp {
+  @include flexColumnCenter;
 }

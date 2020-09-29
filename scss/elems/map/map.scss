@@ -1,6 +1,9 @@
 @import "../../states/_varibles";
+@import "../../states/flex/index";
+
 
 #map {
   width: $width100;
   height: $height100;
+  @include flexColumnCenter;
 }

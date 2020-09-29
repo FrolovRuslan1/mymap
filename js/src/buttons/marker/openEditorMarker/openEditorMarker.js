@@ -1,4 +1,3 @@
-import map from "../../../map/map"
 import {editorMarker, buttonMarker, inputLat, inputLng} from "../../../states/varible/varebles";
 
 

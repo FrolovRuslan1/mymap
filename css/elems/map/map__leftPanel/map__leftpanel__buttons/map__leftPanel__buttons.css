@@ -1,0 +1,30 @@
+.map__leftPanel__buttons {
+  width: 282px;
+  color: black;
+  font-family: ALS Ekibastuz;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 13px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.map__leftPanel__buttons .map__leftPanel__buttons__risks {
+  width: 66px;
+}
+.map__leftPanel__buttons .map__leftPanel__buttons__reports {
+  width: 66px;
+}
+.map__leftPanel__buttons .map__leftPanel__buttons__active {
+  background-color: #7D93AD;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  padding: 6px 42px;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=map__leftpanel__buttons.css.map */

@@ -1,0 +1,11 @@
+@import "../../../../states/flex/index";
+@import "../../../../states/varibles";
+
+.map__leftPanel__danger {
+  @include height(30px);
+  @include width(308px);
+  margin-top: 13px;
+  @include flexRowSpaceBetween;
+  @import "map__leftPanel__danger__text/map__leftPanel__danger__text";
+  @import "map__leftPanel__danger__rightBlock/map__leftPanel__danger__rightBlock";
+}

@@ -1,0 +1,7 @@
+@import "../../../../../../states/varibles";
+
+
+.map__leftPanel__danger__rightBlock__image {
+  @include heightWidth(20px);
+  margin-right: 6px;
+}

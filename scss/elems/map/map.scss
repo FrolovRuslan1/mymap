@@ -3,6 +3,9 @@
 
 
 #map {
-  @include heightWidth(100%);
-  @import "map__leftPanel/";
+  @include height(calc(100% - 50px));
+  @include width(100%);
+  @include flexRowFlexStart;
+  @import "map__leftPanel/map__leftPanel";
+  @import "map__closeLeftPanel/map__closeLeftPanel";
 }

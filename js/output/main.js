@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\r\nlet map = L.map('map',{drawControl: true}).setView([55.7522, 37.6156], 13);\r\nL.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {\r\n    attribution: '&copy; <a href=\"http://osm.org/copyright\">OpenStreetMap</a> contributors'\r\n}).addTo(map);\n\n//# sourceURL=webpack:///./js/index.js?");
+eval("\nlet map = L.map('map',{drawControl: true}).setView([55.7522, 37.6156], 13);\nL.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {\n    attribution: '&copy; <a href=\"http://osm.org/copyright\">OpenStreetMap</a> contributors'\n}).addTo(map);\n\n\n\n\n\n\nnew Vue({\n    el: document.getElementsByClassName('map__closeLeftPanel')[0],\n    data: function () {\n        return {\n\n        }\n    }\n})\n\n//# sourceURL=webpack:///./js/index.js?");
 
 /***/ })
 

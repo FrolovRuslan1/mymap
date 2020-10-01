@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="leaflet/leaflet.css" />
     <script type="text/javascript" src="./leaflet/leaflet.js"></script>
     <script src="./node_modules/vue/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
 
@@ -25,15 +24,15 @@
     <div id="map">
         <div class="map__leftPanel">
             <div class="map__leftPanel__danger">
-                <div class="map__leftPanel__danger__text">Опасность</div>
+                <div class="map__leftPanel__danger__text"></div>
                 <div class="map__leftPanel__danger__rightBlock">
                     <img src="./img/danger.svg" alt="" class="map__leftPanel__danger__rightBlock__image">
-                    <div class="map__leftPanel__danger__rightBlock__text">8,3 балла</div>
+                    <div class="map__leftPanel__danger__rightBlock">8,3 балла</div>
                 </div>
             </div>
             <div class="map__leftPanel__buttons">
-                <div class="map__leftPanel__buttons__risks ">Риски</div>
-                <div class="map__leftPanel__buttons__reports map__leftPanel__buttons__active">Отчеты</div>
+                <div class="map__leftPanel__buttons__risks">Риски</div>
+                <div class="map__leftPanel__buttons">Отчеты</div>
             </div>
 
 
@@ -57,7 +56,7 @@
                 </div>
             </div>
 
-            <div class="map__leftPanel__reports" style="display: none">
+            <div class="map__leftPanel__reports">
                 <div class="map__leftPanel__reports__upText">Отчетные документы</div>
                 <div class="map__leftPanel__reports__line"></div>
                 <div class="map__leftPanel__reports__content">
@@ -72,7 +71,6 @@
                 </div>
             </div>
         </div>
-        <img src="img/ClosePanel.png" alt="" class="map__closeLeftPanel">
     </div>
 
 

@@ -1,0 +1,22 @@
+/* Error: This file is already being loaded.
+ *    ,--> elems\map\map.scss
+ * 7  |   @import "";
+ *    |           ^^ new load
+ *    '
+ *    ,--> index.scss
+ * 18 | @import "elems/map/map";
+ *    |         =============== original load
+ *    '
+ *   elems\map\map.scss 7:11  @import
+ *   index.scss 18:9          root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: This file is already being loaded.\a    \250c \2500 \2500 > elems\\map\\map.scss\a 7  \2502    @import "";\d\a    \2502            ^^ new load\a    \2575 \a    \250c \2500 \2500 > index.scss\a 18 \2502  @import "elems/map/map";\d\a    \2502          \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  original load\a    \2575 \a   elems\\map\\map.scss 7:11  @import\a   index.scss 18:9          root stylesheet';
+}

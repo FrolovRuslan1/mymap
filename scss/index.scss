@@ -1,39 +1,18 @@
-@import "states/_varibles";
 @import "states/flex/_index";
-
-
+@import "states/_varibles";
 
 
 * {
-  outline: 1px solid #5863e7;
+  outline: #68cc76;
   padding: 0;
   border: 0;
   margin: 0;
 }
 
-html {
-  height: $height100;
-  body {
-    height: $height100;
-  }
+html, body  {
+  @include height(100%);
+  @include width(100%);
 }
 
-
-
-
-@import "elems/mapEditor/mapEditor";
-
-@import "elems/mapEditor__headerEditor/mapEditor__headerEditor";
-
-@import "elems/mapEditor__marker/mapEditor__marker";
-
+@import "elems/header/header";
 @import "elems/map/map";
-
-.mapEditor__headerEditor__buttons__shadow {
-  @import "states/shadow/shadowButton";
-  @include shadowButton(2px 1px 2px 2px black);
-}
-
-.popUp {
-  @include flexColumnCenter;
-}

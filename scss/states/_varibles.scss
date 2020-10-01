@@ -1,6 +1,17 @@
-$height100: 100%;
-$width100: 100%;
-
-@mixin userNoSelect{
-  user-select: none;
+@mixin height($height){
+  height: $height;
 }
+
+@mixin width($width){
+  width: $width;
+}
+
+@mixin heightWidth($common) {
+  @include height($common);
+  @include width($common);
+}
+
+@mixin backgroundColor($color) {
+  background-color: $color;
+}
+

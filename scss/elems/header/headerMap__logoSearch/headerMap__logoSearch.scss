@@ -1,0 +1,7 @@
+@import "../../../states/varibles";
+
+
+.headerMap__logoSearch {
+  @include heightWidth(25px);
+  margin-right: 10px;
+}

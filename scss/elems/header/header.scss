@@ -1,0 +1,14 @@
+@import "../../states/flex/_index";
+@import "../../states/_varibles";
+
+.headerMap {
+  @include height(50px);
+  @include width(100%);
+  @include backgroundColor(#4A9F98);
+  @include flexRowFlexEnd;
+  @import "headerMap__logoSearch/headerMap__logoSearch";
+  @import "headerMap__userLogo/headerMap__userLogo";
+  @import "headerMap__fullName/headerMap__fullName";
+  @import "headerMap__button/headerMap__button";
+}
+

@@ -1,52 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>myMaps</title>
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="leaflet/leaflet.css" />
-    <script type="text/javascript" src="leaflet/leaflet.js"></script>
+    <script type="text/javascript" src="./leaflet/leaflet.js"></script>
+    <script src="./node_modules/vue/dist/vue.js"></script>
 </head>
 <body>
 
 
+    <header class="headerMap">
+        <img src="./img/Vector.svg" alt="" class="headerMap__logoSearch">
+        <img src="./img/avatar-icon.svg" alt="" class="headerMap__userLogo">
+        <div class="headerMap__fullName">Фамилия И. О.</div>
+        <img src="./img/VectorButton.svg" alt="" class="headerMap__button">
+    </header>
 
-<div class="mapEditor">
-    <div class="mapEditor__headerEditor">
-        <div class="mapEditor__headerEditor__mode">Edit</div>
-        <div class="mapEditor__headerEditor__buttons" style="display: none">
-            <div class="mapEditor__headerEditor__buttons__button mapEditor__headerEditor__buttons__marker">Marks</div>
-            <div class="mapEditor__headerEditor__buttons__button mapEditor__headerEditor__buttons__polyline">Polyline</div>
-            <div class="mapEditor__headerEditor__buttons__button mapEditor__headerEditor__buttons__polygon">Polygon</div>
-            <div class="mapEditor__headerEditor__buttons__button mapEditor__headerEditor__buttons__rectangle">Rectangle</div>
-            <div class="mapEditor__headerEditor__buttons__button mapEditor__headerEditor__buttons__circle">Circle</div>
+
+
+    <div id="map">
+        <div class="map__danger">
+            <div class="map__danger__text"></div>
+            <div class="map__danger__rightBlock">
+                <img src="./img/danger.svg" alt="" class="map__danger__rightBlock__image">
+                <div class="map__danger__rightBlock">8,3 балла</div>
+            </div>
         </div>
-    </div>
-
-
-    <div class="container__map">
-        <div id="map">
-            <div class="mapEditor__marker" style="display: none">
-                <input type="text" class="mapEditor__marker__input mapEditor__marker__name" placeholder="name">
-                <input type="text" class="mapEditor__marker__input mapEditor__marker__description" placeholder="description">
-                <input type="text" class="mapEditor__marker__input mapEditor__marker__latitude" placeholder="latitude" disabled>
-                <input type="text" class="mapEditor__marker__input mapEditor__marker__longitude" placeholder="longitude" disabled>
-                <div class="mapEditor__marker__button">OK</div>
+        <div class="map__buttons">
+            <div class="map__buttons__risks">Риски</div>
+            <div class="map__buttons">Отчеты</div>
+        </div>
+        <div class="map__leftPanel">
+            <div class="map__leftPanel__risks">
+                <div class="map__leftPanel__risks__upText">Потенциальные последствия для здоровья</div>
+                <div class="map__leftPanel__risks__line"></div>
+                <div class="map__leftPanel__risks__content">
+                    <div class="map__leftPanel__risks__content__row1">
+                        <img src="./img/lungs.svg" alt="" class="map__leftPanel__risks__content__row1__image">
+                        <div class="map__leftPanel__risks__content__row1__text">76% - возникновение тяжелых заболеваний дыхательных путей</div>
+                    </div>
+                    <div class="map__leftPanel__risks__content__row2">
+                        <img src="./img/brokenLungs.svg" alt="" class="map__leftPanel__risks__content__row2__image">
+                        <div class="map__leftPanel__risks__content__row2__text">54% - Возникновение восполительных процессов дыхательной системы</div>
+                    </div>
+                    <div class="map__leftPanel__risks__content__row3">
+                        <img src="./img/eyes.svg" alt="" class="map__leftPanel__risks__content__row3__image">
+                        <div class="map__leftPanel__risks__content__row3__text">92% - Критические заболевания дыхательных путей</div>
+                    </div>
+                </div>
+            </div>
+            <div class="map__leftPanel__reports">
+                <div class="map__leftPanel__reports__upText">Отчетные документы</div>
+                <div class="map__leftPanel__reports__line"></div>
+                <div class="map__leftPanel__reports__content">
+                    <div class="map__leftPanel__reports__content__row1">
+                        <img src="./img/HTML__icon.svg" alt="" class="map__leftPanel__reports__content__row1__image">
+                        <div class="map__leftPanel__reports__content__row1__text">Выгрузить отчет в формате HTML страницы</div>
+                    </div>
+                    <div class="map__leftPanel__reports__content__row2">
+                        <img src="./img/PDF__icon.svg" alt="" class="map__leftPanel__reports__content__row2__image">
+                        <div class="map__leftPanel__reports__content__row2__text">Выгрузить отчет в формате файла</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-</div>
-
-
-
-
-
-
-
-
-
 
 
     <script src="js/output/main.js"></script>

@@ -6873,7 +6873,7 @@
   	},
 
   	// @method setZIndex(zIndex: Number): this
-  	// Calls `setZIndex` on every layer contained in this group, passing the z-index.
+  	// Calls `setZIndex` on every layer contained in this group, passing the z-index.js.
   	setZIndex: function (zIndex) {
   		return this.invoke('setZIndex', zIndex);
   	},
@@ -7400,7 +7400,7 @@
   		riseOnHover: false,
 
   		// @option riseOffset: Number = 250
-  		// The z-index offset used for the `riseOnHover` feature.
+  		// The z-index.js offset used for the `riseOnHover` feature.
   		riseOffset: 250,
 
   		// @option pane: String = 'markerPane'

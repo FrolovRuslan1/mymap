@@ -3,8 +3,7 @@
  * 7 |   @import "map__leftPanel/";
  *   |           ^^^^^^^^^^^^^^^^^
  *   '
- *   elems\map\map.scss 7:11  @import
- *   index.scss 18:9          root stylesheet */
+ *   scss\elems\map\map.scss 7:11  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 7 \2502    @import \"map__leftPanel/\";\d\a   \2502            ^^^^^^^^^^^^^^^^^\a   \2575 \a   elems\\map\\map.scss 7:11  @import\a   index.scss 18:9          root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 7 \2502    @import \"map__leftPanel/\";\d\a   \2502            ^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\elems\\map\\map.scss 7:11  root stylesheet";
 }

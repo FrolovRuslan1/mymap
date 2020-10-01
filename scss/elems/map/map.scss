@@ -1,0 +1,8 @@
+@import "../../states/varibles";
+@import "../../states/flex/index";
+
+
+#map {
+  @include heightWidth(100%);
+  @import "map__leftPanel/";
+}

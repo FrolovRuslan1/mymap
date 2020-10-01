@@ -1,0 +1,16 @@
+@import "../../../states/flex/index";
+@import "../../../states/varibles";
+
+
+
+.map__leftPanel {
+  @include height(100%);
+  @include width(346px);
+  @include flexColumnFlexStart;
+  position: relative;
+  z-index: 10000;
+  @include backgroundColor(white);
+  @import "map__leftPanel__danger/map__leftPanel__danger";
+  @import "map__leftPanel__buttons/map__leftPanel__buttons";
+  @import "map__leftPanel__common/map__leftPanel__common";
+}

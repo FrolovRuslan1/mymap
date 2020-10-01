@@ -1,0 +1,10 @@
+@import "../../../../../../states/flex/index";
+@import "../../../../../../states/varibles";
+
+.map__leftPanel__risks__content__row1, .map__leftPanel__risks__content__row2, .map__leftPanel__risks__content__row3, .map__leftPanel__reports__content__row1, .map__leftPanel__reports__content__row2 {
+  @include width(305px);
+  margin-top: 13px;
+  @include flexRowSpaceBetween;
+  @import "map__leftPanel__common__content__rows__image/map__leftPanel__common__content__rows__image";
+  @import "map__leftPanel__common__content__rows__text/map__leftPanel__common__content__rows__text";
+}

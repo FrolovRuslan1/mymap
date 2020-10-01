@@ -6,6 +6,14 @@
   width: $width;
 }
 
+@mixin  maxHeight($height) {
+  max-height: $height;
+}
+
+@mixin  maxWidth($width) {
+  max-width: $width;
+}
+
 @mixin heightWidth($common) {
   @include height($common);
   @include width($common);
@@ -14,4 +22,6 @@
 @mixin backgroundColor($color) {
   background-color: $color;
 }
+
+$green: #4A9F98;
 

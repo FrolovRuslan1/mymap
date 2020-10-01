@@ -1,0 +1,9 @@
+@import "../../../../../states/varibles";
+
+
+.map__leftPanel__risks__line, .map__leftPanel__reports__line {
+  @include height(2px);
+  @include width(290px);
+  @include backgroundColor(#4A9F98);
+  margin-top: 5px;
+}

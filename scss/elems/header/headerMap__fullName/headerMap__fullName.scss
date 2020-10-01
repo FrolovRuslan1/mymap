@@ -1,3 +1,7 @@
+@import "../../../states/varibles";
+
+
 .headerMap__fullName {
+  @include width(110px);
   color: white;
 }

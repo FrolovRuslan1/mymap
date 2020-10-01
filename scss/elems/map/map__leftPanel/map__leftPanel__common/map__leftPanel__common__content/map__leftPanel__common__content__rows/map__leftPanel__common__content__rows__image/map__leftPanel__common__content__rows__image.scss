@@ -1,0 +1,8 @@
+@import "../../../../../../../states/varibles";
+
+
+
+
+.map__leftPanel__risks__content__row1__image, .map__leftPanel__risks__content__row2__image, .map__leftPanel__risks__content__row3__image, .map__leftPanel__reports__content__row1__image, .map__leftPanel__reports__content__row2__image {
+  @include heightWidth(45px);
+}

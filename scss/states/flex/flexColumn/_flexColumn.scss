@@ -18,13 +18,3 @@
   @include flexColumn;
   justify-content: space-between;
 }
-
-@mixin flexColumnFlexStart {
-  @include flexColumn;
-  justify-content: flex-start;
-}
-
-@mixin flexColumnFlexEnd {
-  @include flexColumn;
-  justify-content: flex-end;
-}

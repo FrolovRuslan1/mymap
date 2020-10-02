@@ -10,6 +10,7 @@
   cursor: default;
   position: relative;
   z-index: 10000;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
   @include backgroundColor(white);
   @import "map__leftPanel__danger/map__leftPanel__danger";
   @import "map__leftPanel__buttons/map__leftPanel__buttons";

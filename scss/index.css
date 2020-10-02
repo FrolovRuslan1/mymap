@@ -55,6 +55,7 @@ html, body {
   cursor: default;
   position: relative;
   z-index: 10000;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
   background-color: white;
 }
 #map .map__leftPanel .map__leftPanel__danger {

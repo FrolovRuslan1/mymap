@@ -33,6 +33,15 @@ let map__closeLeftPanel = new Vue({
 
 
 
+
+
+
+
+
+
+
+
+// ---------------------ВОТ ЗДЕСЬ НЕ РАБОТАЕТ
 let map__leftPanel__buttons__risks = new Vue({
     el: document.getElementsByClassName('map__leftPanel__buttons__risks')[0],
     data: function () {
@@ -52,3 +61,4 @@ let map__leftPanel__buttons__reports = new Vue({
         }
     }
 })
+// ----------------------------------------

@@ -7,6 +7,7 @@
   @include height(100%);
   @include width(346px);
   @include flexColumnFlexStart;
+  cursor: default;
   position: relative;
   z-index: 10000;
   @include backgroundColor(white);

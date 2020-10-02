@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
+  cursor: default;
   position: relative;
   z-index: 10000;
   background-color: white;
@@ -120,4 +121,4 @@
   width: 230px;
 }
 
-/*# sourceMappingURL=map__leftpanel.css.map */
+/*# sourceMappingURL=map__leftPanel.css.map */

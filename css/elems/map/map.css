@@ -13,6 +13,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
+  cursor: default;
   position: relative;
   z-index: 10000;
   background-color: white;
@@ -130,6 +131,10 @@
 #map .map__closeLeftPanel {
   z-index: 10000;
   align-self: flex-start;
+  cursor: pointer;
+}
+#map .map__leftPanel_Close {
+  display: none;
 }
 
 /*# sourceMappingURL=map.css.map */

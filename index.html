@@ -23,7 +23,7 @@
 
 
     <div id="map">
-        <div class="map__leftPanel">
+        <div class="map__leftPanel" v-bind:class="{map__leftPanel_Close: isClose}">
             <div class="map__leftPanel__danger">
                 <div class="map__leftPanel__danger__text">Опасность</div>
                 <div class="map__leftPanel__danger__rightBlock">
@@ -38,7 +38,7 @@
 
 
 
-            <div class="map__leftPanel__risks">
+            <div class="map__leftPanel__risks" >
                 <div class="map__leftPanel__risks__upText">Потенциальные последствия для здоровья</div>
                 <div class="map__leftPanel__risks__line"></div>
                 <div class="map__leftPanel__risks__content">
@@ -57,7 +57,7 @@
                 </div>
             </div>
 
-            <div class="map__leftPanel__reports" style="display: none">
+            <div class="map__leftPanel__reports" >
                 <div class="map__leftPanel__reports__upText">Отчетные документы</div>
                 <div class="map__leftPanel__reports__line"></div>
                 <div class="map__leftPanel__reports__content">
@@ -72,7 +72,7 @@
                 </div>
             </div>
         </div>
-        <img src="img/ClosePanel.png" alt="" class="map__closeLeftPanel">
+        <img src="img/ClosePanel.png" alt="" class="map__closeLeftPanel" v-on:click="close">
     </div>
 
 

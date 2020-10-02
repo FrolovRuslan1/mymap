@@ -1,6 +1,7 @@
 .map__closeLeftPanel {
   z-index: 10000;
   align-self: flex-start;
+  cursor: pointer;
 }
 
-/*# sourceMappingURL=map__closeleftpanel.css.map */
+/*# sourceMappingURL=map__closeLeftPanel.css.map */

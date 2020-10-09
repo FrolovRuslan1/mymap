@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"map__leftPanel__danger__rightBlock__image.css"}
+{"version":3,"sourceRoot":"","sources":["map__leftPanel__danger__rightBlock__image.scss","../../../../../../states/_varibles.scss"],"names":[],"mappings":"AAGA;ECFE,QDGqB;ECCrB,ODDqB;EACrB","file":"map__leftPanel__danger__rightBlock__image.css"}

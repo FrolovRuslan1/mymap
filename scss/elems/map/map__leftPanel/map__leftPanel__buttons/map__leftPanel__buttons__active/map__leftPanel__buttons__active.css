@@ -1,3 +1,9 @@
-
+.map__leftPanel__buttons__active {
+  background-color: #7D93AD;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  padding: 6px 42px;
+  color: #FFFFFF;
+}
 
 /*# sourceMappingURL=map__leftPanel__buttons__active.css.map */

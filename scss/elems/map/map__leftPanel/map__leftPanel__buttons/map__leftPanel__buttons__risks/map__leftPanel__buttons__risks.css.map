@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"map__leftPanel__buttons__risks.css"}
+{"version":3,"sourceRoot":"","sources":["map__leftPanel__buttons__risks.scss","../../../../../states/_varibles.scss"],"names":[],"mappings":"AAGA;ECEE,ODDe","file":"map__leftPanel__buttons__risks.css"}

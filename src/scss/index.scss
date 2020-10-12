@@ -1,0 +1,22 @@
+@import "states/flex/index";
+@import "states/varibles";
+
+
+* {
+  outline: #68cc76;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+html, body  {
+  @include height(100%);
+  @include width(100%);
+}
+
+.wrapperContent {
+  @include heightWidth(100%);
+}
+
+@import "elems/header/header";
+@import "elems/map/map.css";

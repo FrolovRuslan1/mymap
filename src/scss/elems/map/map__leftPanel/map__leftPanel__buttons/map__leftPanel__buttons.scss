@@ -1,0 +1,19 @@
+@import "../../../../states/flex/index";
+@import "../../../../states/varibles";
+
+
+.map__leftPanel__buttons{
+  @include width(282px);
+  color: black;
+  font-family: ALS Ekibastuz ;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 13px;
+  user-select: none;
+  @include flexRowSpaceBetween;
+  @import "map__leftPanel__buttons__risks/map__leftPanel__buttons__risks";
+  @import "map__leftPanel__buttons__reports/map__leftPanel__buttons__reports.css";
+  @import "map__leftPanel__buttons__active/map__leftPanel__buttons__active";
+}

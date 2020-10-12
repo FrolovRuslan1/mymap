@@ -1,0 +1,11 @@
+@import "../../../../states/flex/index";
+@import "../../../../states/varibles";
+
+
+
+.map__leftPanel__risks, .map__leftPanel__reports {
+  @include flexColumnFlexStart;
+  @import "map__leftPanel__common__upText/map__leftPanel__common__upText";
+  @import "map__leftPanel__common__line/map__leftPanel__common__line";
+  @import "map__leftPanel__common__content/map__leftPanel__common__content.css";
+}

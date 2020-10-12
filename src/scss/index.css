@@ -1,0 +1,44 @@
+@import "elems/map/map.css";
+* {
+  outline: #68cc76;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapperContent {
+  height: 100%;
+  width: 100%;
+}
+
+.headerMap {
+  height: 50px;
+  width: 100%;
+  background-color: #4A9F98;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  @import "headerMap__button/headerMap__button.css";
+}
+.headerMap .headerMap__logoSearch {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+.headerMap .headerMap__userLogo {
+  height: 30px;
+  width: 30px;
+  margin-right: 17px;
+}
+.headerMap .headerMap__fullName {
+  width: 110px;
+  color: white;
+}
+
+/*# sourceMappingURL=index.css.map */

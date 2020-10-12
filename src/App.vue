@@ -1,16 +1,20 @@
 <template>
-  <upHeader></upHeader>
+  <div class="wrapperContent">
+    <UpHeader></UpHeader>
+    <Map></Map>
+  </div>
 </template>
 
 <script>
 
-import upHeader from './components/up-header.vue'
+import UpHeader from './components/up-header.vue'
+import Map from './components/Map.vue'
 export default {
   components: {
-    upHeader
+    UpHeader,
+    Map
   }
 }
-
 </script>
 
 <style lang="scss">

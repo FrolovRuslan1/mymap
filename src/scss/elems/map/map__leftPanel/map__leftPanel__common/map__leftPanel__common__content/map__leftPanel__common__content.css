@@ -1,0 +1,9 @@
+.map__leftPanel__risks__content, .map__leftPanel__reports__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  @import "map__leftPanel__common__content__rows/map__leftPanel__common__content__rows.css";
+}
+
+/*# sourceMappingURL=map__leftPanel__common__content.css.map */

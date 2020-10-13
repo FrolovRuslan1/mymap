@@ -3,5 +3,5 @@
 
 .map__leftPanel__risks__content, .map__leftPanel__reports__content {
   @include flexColumnCenter;
-  @import "map__leftPanel__common__content__rows/map__leftPanel__common__content__rows.css";
+  @import "map__leftPanel__common__content__rows/map__leftPanel__common__content__rows";
 }

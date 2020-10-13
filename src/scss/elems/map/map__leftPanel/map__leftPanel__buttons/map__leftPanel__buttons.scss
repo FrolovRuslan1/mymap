@@ -14,6 +14,6 @@
   user-select: none;
   @include flexRowSpaceBetween;
   @import "map__leftPanel__buttons__risks/map__leftPanel__buttons__risks";
-  @import "map__leftPanel__buttons__reports/map__leftPanel__buttons__reports.css";
+  @import "map__leftPanel__buttons__reports/map__leftPanel__buttons__reports";
   @import "map__leftPanel__buttons__active/map__leftPanel__buttons__active";
 }

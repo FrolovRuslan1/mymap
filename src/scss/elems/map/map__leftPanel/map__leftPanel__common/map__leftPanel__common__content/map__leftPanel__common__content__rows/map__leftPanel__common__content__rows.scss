@@ -5,6 +5,6 @@
   @include width(305px);
   margin-top: 13px;
   @include flexRowSpaceBetween;
-  @import "map__leftPanel__common__content__rows__image/map__leftPanel__common__content__rows__image.css";
+  @import "map__leftPanel__common__content__rows__image/map__leftPanel__common__content__rows__image";
   @import "map__leftPanel__common__content__rows__text/map__leftPanel__common__content__rows__text";
 }

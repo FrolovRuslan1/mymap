@@ -4,6 +4,6 @@
 
 .map__leftPanel__danger__rightBlock {
   @include flexRowSpaceBetween;
-  @import "map__leftPanel__danger__rightBlock__image/map__leftPanel__danger__rightBlock__image.css";
-  @import "map__leftPanel__danger__rightBlock__text/map__leftPanel__danger__rightBlock__text.css";
+  @import "map__leftPanel__danger__rightBlock__image/map__leftPanel__danger__rightBlock__image";
+  @import "map__leftPanel__danger__rightBlock__text/map__leftPanel__danger__rightBlock__text";
 }

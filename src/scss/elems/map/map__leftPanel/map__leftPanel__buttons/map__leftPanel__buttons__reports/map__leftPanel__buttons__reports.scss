@@ -3,4 +3,6 @@
 
 .map__leftPanel__buttons__reports{
   @include width(66px);
+  cursor: pointer;
+  padding: 6px 42px;
 }

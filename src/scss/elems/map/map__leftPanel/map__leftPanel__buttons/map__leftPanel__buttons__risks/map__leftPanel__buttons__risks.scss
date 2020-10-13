@@ -3,4 +3,6 @@
 
 .map__leftPanel__buttons__risks{
   @include width(66px);
+  padding: 6px 42px;
+  cursor: pointer;
 }

@@ -7,8 +7,7 @@ export default {
   props: {
     isActive: {
       type: Boolean,
-      required: true,
-      default: true
+      required: true
     }
   }
 }

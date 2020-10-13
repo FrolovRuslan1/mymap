@@ -1,7 +1,7 @@
 <template>
 
   <div id="map">
-    <MapLeftPanel :isClose="isCloseMapLeftPanel"></MapLeftPanel>
+    <MapLeftPanel :isClose="isCloseMapLeftPanel" @click.stop @drag.stop @dragstart.stop @dragenter.stop @dragover.stop @mousemove.native.stop @mouseup.native.stop @mousedown.native.stop @mouseover.native.stop></MapLeftPanel>
     <MapCloseLeftPanel @click="close"></MapCloseLeftPanel>
   </div>
 

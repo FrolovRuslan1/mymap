@@ -1,7 +1,7 @@
 <template>
-  <div class="map__leftPanel" v-bind:class="{map__leftPanel_Close: isClose}">
+  <div class="map__leftPanel" v-bind:class="{map__leftPanel_Close: isClose}" @click.stop="" @dragexit.stop="" @dragend.stop="" @dragleave.stop="" @drop.stop="" @drag.stop="" @dragstart.stop="" @dragenter.stop="" @dragover.stop="" @mousemove.stop="" @mouseup.stop="" @mousedown.stop="" @mouseover.stop="">
     <MapLeftPanelDanger></MapLeftPanelDanger>
-    <MapLeftPanelButtons @click-risks="clickRisks" @click-reports="clickReports" @click="clickReports"></MapLeftPanelButtons>
+    <MapLeftPanelButtons @click-risks="clickRisks" @click-reports="clickReports"></MapLeftPanelButtons>
     <MapLeftPanelRisks v-show="isShowPanelRisks"></MapLeftPanelRisks>
     <MapLeftPanelReports v-show="isShowPanelReports"></MapLeftPanelReports>
   </div>
@@ -36,21 +36,21 @@ export default {
     clickRisks: function (active) {
       const isActiveRiskButton = active
       if (isActiveRiskButton) {
-        this.isShowPanelRisks = false
-        this.isShowPanelReports = true
-      } else {
         this.isShowPanelRisks = true
         this.isShowPanelReports = false
+      } else {
+        this.isShowPanelRisks = false
+        this.isShowPanelReports = true
       }
     },
     clickReports: function (active) {
       const isActiveReportsButton = active
       if (isActiveReportsButton) {
-        this.isShowPanelReports = false
-        this.isShowPanelRisks = true
-      } else {
         this.isShowPanelReports = true
         this.isShowPanelRisks = false
+      } else {
+        this.isShowPanelReports = false
+        this.isShowPanelRisks = true
       }
     }
   }

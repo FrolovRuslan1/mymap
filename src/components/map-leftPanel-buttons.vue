@@ -22,21 +22,21 @@ export default {
   methods: {
     active: function (obj) {
       function checkRisks () {
-        if (this.isActiveReports && !this.isActiveRisks) {
-          this.isActiveReports = false
-          this.isActiveRisks = true
-        } else {
-          this.isActiveReports = true
-          this.isActiveRisks = false
-        }
-      }
-      function checkReports () {
         if (this.isActiveRisks && !this.isActiveReports) {
           this.isActiveRisks = false
           this.isActiveReports = true
         } else {
           this.isActiveRisks = true
           this.isActiveReports = false
+        }
+      }
+      function checkReports () {
+        if (this.isActiveReports && !this.isActiveRisks) {
+          this.isActiveReports = false
+          this.isActiveRisks = true
+        } else {
+          this.isActiveReports = true
+          this.isActiveRisks = false
         }
       }
 

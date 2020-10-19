@@ -5,8 +5,7 @@
 #map {
   @include height(calc(100% - 50px));
   @include width(100%);
-  @include flexRowFlexStart;
+  @include flexRowSpaceBetween;
   @import "map__leftPanel/map__leftPanel";
   @import "map__closeLeftPanel/map__closeLeftPanel";
-  @import "map__leftPanel_Close/map__leftPanel_Close";
 }

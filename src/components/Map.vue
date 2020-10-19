@@ -1,9 +1,13 @@
 <template>
 
   <div id="map">
-    <MapLeftPanel :isClose="isCloseMapLeftPanel" @click.stop @drag.stop @dragstart.stop @dragenter.stop @dragover.stop @mousemove.native.stop @mouseup.native.stop @mousedown.native.stop @mouseover.native.stop></MapLeftPanel>
-    <MapCloseLeftPanel @click="close"></MapCloseLeftPanel>
-    <AddMarker></AddMarker>
+    <div class="map__insertWrapper">
+      <div class="map__leftPanel__wrapper">
+        <MapLeftPanel :isClose="isCloseMapLeftPanel"></MapLeftPanel>
+        <MapCloseLeftPanel @click="close"></MapCloseLeftPanel>
+      </div>
+      <AddMarker></AddMarker>
+    </div>
   </div>
 
 </template>
@@ -12,10 +16,11 @@
 import MapLeftPanel from './map-leftPanel.vue'
 import MapCloseLeftPanel from './map-closeLeftPanel'
 import AddMarker from './map-addMarker'
+
 export default {
   data: function () {
     return {
-      isCloseMapLeftPanel: true
+      isCloseMapLeftPanel: false
     }
   },
   components: {
@@ -34,3 +39,19 @@ export default {
   }
 }
 </script>
+
+<style scoped lang="scss">
+  @import "../scss/states/flex/index";
+  @import "../scss/states/varibles";
+
+  .map__insertWrapper {
+    @include heightWidth(100%);
+    @include flexRowSpaceBetween;
+    z-index: 1000;
+
+    .map__leftPanel__wrapper {
+      @include height(100%);
+      @include flexRowCenter;
+    }
+  }
+</style>
